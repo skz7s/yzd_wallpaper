@@ -1,0 +1,116 @@
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:iconSpaceReserved="false">
+
+    <PreferenceCategory
+        app:iconSpaceReserved="false"
+        app:title="@string/operate_header">
+
+        <Preference
+            app:iconSpaceReserved="false"
+            app:key="update"
+            app:summary="勿频繁连续操作"
+            app:title="@string/update" />
+
+        <Preference
+            app:iconSpaceReserved="false"
+            app:key="collect"
+            app:summary="收藏的壁纸会放到我的收藏中"
+            app:title="@string/collect" />
+
+    </PreferenceCategory>
+
+
+    <PreferenceCategory
+        app:iconSpaceReserved="false"
+        app:title="@string/global_config_header">
+
+        <SwitchPreference
+            app:defaultValue="true"
+            app:iconSpaceReserved="false"
+            app:key="is_service_open"
+            app:title="@string/is_service_open" />
+
+        <SwitchPreference
+            app:defaultValue="false"
+            app:iconSpaceReserved="false"
+            app:key="is_local_path"
+            app:title="@string/is_local_path" />
+
+        <MultiSelectListPreference
+            app:entries="@array/empty_entries"
+            app:entryValues="@array/empty_values"
+            app:iconSpaceReserved="false"
+            app:key="wallpaper_lib"
+            app:title="@string/wallpaper_lib" />
+
+        <Preference
+            app:iconSpaceReserved="false"
+            app:summary="Andriod10以上版本，可选目录很少, 尽量将图片放在可选目录下"
+            app:key="custom_path"
+            app:title="@string/custom_path" />
+
+    </PreferenceCategory>
+
+
+    <PreferenceCategory
+        app:iconSpaceReserved="false"
+        app:key="update_config"
+        app:title="@string/auto_update_header">
+
+        <SwitchPreference
+            app:defaultValue="true"
+            app:iconSpaceReserved="false"
+            app:key="is_auto_update"
+            app:summary="仅在wifi状态下更新"
+            app:title="@string/is_auto_update" />
+
+        <EditTextPreference
+            app:defaultValue="24"
+            app:dialogMessage="不要设置太小，以避免频繁占用网络资源"
+            app:iconSpaceReserved="false"
+            app:key="update_freq"
+            app:title="@string/update_freq"
+            app:useSimpleSummaryProvider="true" />
+
+        <MultiSelectListPreference
+            app:entries="@array/empty_entries"
+            app:entryValues="@array/empty_values"
+            app:iconSpaceReserved="false"
+            app:key="strategy"
+            app:title="@string/strategy" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        app:iconSpaceReserved="false"
+        app:title="@string/others_header">
+
+        <EditTextPreference
+            app:defaultValue="30"
+            app:dialogMessage="该值为每个策略的最大缓存数，而不是总数"
+            app:iconSpaceReserved="false"
+            app:key="total_num"
+            app:title="@string/total_num"
+            app:useSimpleSummaryProvider="true" />
+
+        <SwitchPreference
+            app:defaultValue="false"
+            app:iconSpaceReserved="false"
+            app:key="is_gesture"
+            app:summary="屏幕右侧边缘，上滑切换壁纸，下滑收藏壁纸(更改后重启服务生效)"
+            app:title="@string/is_gesture" />
+
+        <SwitchPreference
+            app:defaultValue="true"
+            app:iconSpaceReserved="false"
+            app:key="is_hide_task"
+            app:title="@string/is_hide_task" />
+
+        <Preference
+            app:iconSpaceReserved="false"
+            app:key="permissions"
+            app:title="@string/permissions" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

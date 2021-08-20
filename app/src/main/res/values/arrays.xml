@@ -1,0 +1,7 @@
+<resources>
+    <!-- default Preference 空数组，用于动态处理的数据 -->
+    <string-array name="empty_entries"></string-array>
+
+    <string-array name="empty_values"></string-array>
+
+</resources>
