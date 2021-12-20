@@ -1,0 +1,55 @@
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:iconSpaceReserved="false">
+
+    <PreferenceCategory
+        app:iconSpaceReserved="false"
+        app:title="@string/global_config_header">
+
+        <SwitchPreference
+            app:defaultValue="true"
+            app:iconSpaceReserved="false"
+            app:key="is_service_open"
+            app:summary="开启服务后每次亮屏会切换壁纸"
+            app:title="@string/is_service_open" />
+
+    </PreferenceCategory>
+
+
+    <PreferenceCategory
+        app:iconSpaceReserved="false"
+        app:key="update_config"
+        app:title="@string/auto_update_header">
+
+        <Preference
+            app:iconSpaceReserved="false"
+            app:key="update"
+            app:summary="勿频繁连续操作"
+            app:title="@string/update" />
+
+        <EditTextPreference
+            app:iconSpaceReserved="false"
+            app:key="strategy_conf"
+            app:summary="格式错误将无法下载，请定时更新"
+            app:title="@string/strategy_conf" />
+
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        app:iconSpaceReserved="false"
+        app:title="@string/others_header">
+
+        <Preference
+            app:iconSpaceReserved="false"
+            app:key="permissions"
+            app:summary="请赋予该app相应的权限"
+            app:title="@string/permissions" />
+
+        <Preference
+            app:iconSpaceReserved="false"
+            app:key="info"
+            app:title="@string/info" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

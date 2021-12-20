@@ -1,0 +1,8 @@
+<resources>
+    <!-- default Preference 空数组，用于动态处理的数据 -->
+    <string-array name="reply_entries">
+    </string-array>
+
+    <string-array name="reply_values">
+    </string-array>
+</resources>
